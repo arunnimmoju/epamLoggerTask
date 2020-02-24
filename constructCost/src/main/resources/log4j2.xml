@@ -2,7 +2,7 @@
 <Configuration status="warn">
     
     <Appenders>
-        <RollingFile name="fileLogger" fileName="D:\logs/app-info.log" filePattern="D:\logs/app-info-%d{yyyy-MM-dd}.log">
+        <RollingFile name="fileLogger" fileName="D:\logs/consCostlog.log" filePattern="D:\logs/app-info-%d{yyyy-MM-dd}.log">
             <PatternLayout>
                 <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</pattern>
             </PatternLayout>
@@ -16,7 +16,7 @@
         </Console>
     </Appenders>
     <Loggers>
-        <Logger name="cleanSample" level="debug" additivity="true">
+        <Logger name="constructCost" level="debug" additivity="true">
             <appender-ref ref="fileLogger" level="debug" />
         </Logger>
         <Root level="debug" additivity="false">
